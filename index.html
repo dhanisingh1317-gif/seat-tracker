@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CEnT-S Seat Tracker</title>
+<style>
+  :root { --bg:#fff; --fg:#1a1a1a; --card:#f4f4f6; --ok:#1b9e4b; --no:#999; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14141a; --fg:#eee; --card:#202029; } }
+  body { font-family: system-ui, sans-serif; background:var(--bg); color:var(--fg); max-width:900px; margin:0 auto; padding:16px; }
+  h1 { margin-bottom:4px; }
+  .sub { color:var(--no); font-size:14px; margin-bottom:12px; }
+  input { width:100%; padding:10px; border-radius:8px; border:1px solid var(--no); background:var(--card); color:var(--fg); box-sizing:border-box; margin-bottom:12px; }
+  .row { background:var(--card); border-radius:10px; padding:12px; margin-bottom:8px; border-left:6px solid var(--no); }
+  .row.open { border-left-color:var(--ok); }
+  .row b { font-size:16px; }
+  .tag { float:right; font-weight:700; color:var(--no); }
+  .open .tag { color:var(--ok); }
+  .meta { font-size:13px; color:var(--no); margin-top:4px; }
+</style>
+</head>
+<body>
+<h1>CEnT-S Seat Tracker</h1>
+<div class="sub" id="sub">loading...</div>
+<input id="q" placeholder="Filter by university or city (e.g. Siena)">
+<div id="list"></div>
+<script>
+let rows = [];
+function render() {
+  const q = document.getElementById("q").value.toLowerCase();
+  const shown = rows.filter(r => (r.university + r.city).toLowerCase().includes(q))
+                    .sort((a, b) => b.open - a.open);
+  document.getElementById("list").innerHTML = shown.map(r => `
+    <div class="row ${r.open ? "open" : ""}">
+      <span class="tag">${r.open ? r.seats + " seats" : "full"}</span>
+      <b>${r.university}</b>
+      <div class="meta">${r.city} · ${r.format} · test ${r.date} · book by ${r.deadline}</div>
+    </div>`).join("") || "<p>Nothing matches.</p>";
+}
+async function load() {
+  try {
+    const d = await (await fetch("data.json?" + Date.now())).json();
+    rows = d.rows;
+    const t = new Date(d.changed).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
+    document.getElementById("sub").textContent =
+      `${rows.filter(r => r.open).length} open · last change ${t} IST · page refreshes every minute`;
+    render();
+  } catch (e) { document.getElementById("sub").textContent = "No data yet - run the GitHub Action once."; }
+}
+document.getElementById("q").addEventListener("input", render);
+load(); setInterval(load, 60000);
+</script>
+</body>
+</html>
