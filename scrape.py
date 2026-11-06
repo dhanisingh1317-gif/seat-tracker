@@ -1,4 +1,4 @@
-import json, os, re
+import json, os, re, time
 from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
@@ -34,10 +34,13 @@ def key(r):
 
 
 def notify(msg):
-    if NTFY_TOPIC:
-        requests.post(f"https://ntfy.sh/{NTFY_TOPIC}", data=msg.encode("utf-8"),
-                      headers={"Title": "CEnT-S seat open!", "Priority": "urgent", "Click": URL})
     print(msg)
+    if not NTFY_TOPIC:
+        return
+    for i in range(6):
+        requests.post(f"https://ntfy.sh/{NTFY_TOPIC}", data=msg.encode("utf-8"),
+                      headers={"Title": "CEnT-S HOME seat open!", "Priority": "urgent", "Click": URL})
+        time.sleep(5)
 
 
 def main():
