@@ -39,7 +39,7 @@ function render() {
 }
 async function load() {
   try {
-    const d = await (await fetch("data.json?" + Date.now())).json();
+       const d = await (await fetch("docs/data.json?" + Date.now())).json();
     rows = d.rows;
     const t = new Date(d.changed).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
     document.getElementById("sub").textContent =
