@@ -19,6 +19,10 @@ def fetch_rows():
         if len(c) < 8:
             continue
         fmt, uni, region, city, deadline, seats, state, date = c[:8]
+        if "HOME" not in fmt.upper():
+            continue
+        if WATCH and not any(w.lower() in (uni + " " + city).lower() for w in WATCH):
+            continue
         if WATCH and not any(w.lower() in (uni + " " + city).lower() for w in WATCH):
             continue
         rows.append({
