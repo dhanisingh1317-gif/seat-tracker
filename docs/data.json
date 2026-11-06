@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-06T11:36:19.443492+00:00",
+ "changed": "2026-11-06T17:41:44.551873+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -17,6 +17,17 @@
    "university": "Politecnico di Milano",
    "region": "LOMBARDIA",
    "city": "MILANO",
+   "deadline": "20/11/2026",
+   "seats": "---",
+   "state": "NOT LONGER AVAILABLE",
+   "date": "26/11/2026",
+   "open": false
+  },
+  {
+   "format": "CENT@HOME",
+   "university": "Università degli studi di Padova",
+   "region": "VENETO",
+   "city": "PADOVA",
    "deadline": "20/11/2026",
    "seats": "---",
    "state": "NOT LONGER AVAILABLE",
