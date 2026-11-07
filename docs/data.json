@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-07T15:14:50.398973+00:00",
+ "changed": "2026-11-07T19:28:38.440425+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -18,10 +18,10 @@
    "region": "LOMBARDIA",
    "city": "MILANO",
    "deadline": "20/11/2026",
-   "seats": "1",
-   "state": "AVAILABLE SEATS",
+   "seats": "---",
+   "state": "NOT LONGER AVAILABLE",
    "date": "26/11/2026",
-   "open": true
+   "open": false
   },
   {
    "format": "CENT@HOME",
