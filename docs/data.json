@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-07T19:28:38.440425+00:00",
+ "changed": "2026-11-09T21:29:27.489886+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -28,6 +28,17 @@
    "university": "Università degli studi di Padova",
    "region": "VENETO",
    "city": "PADOVA",
+   "deadline": "20/11/2026",
+   "seats": "---",
+   "state": "NOT LONGER AVAILABLE",
+   "date": "26/11/2026",
+   "open": false
+  },
+  {
+   "format": "CENT@HOME",
+   "university": "Università Ca' Foscari Venezia",
+   "region": "VENETO",
+   "city": "VENEZIA",
    "deadline": "20/11/2026",
    "seats": "---",
    "state": "NOT LONGER AVAILABLE",
