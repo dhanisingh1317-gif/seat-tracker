@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-09T21:29:27.489886+00:00",
+ "changed": "2026-11-10T11:51:43.859978+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -33,6 +33,17 @@
    "state": "NOT LONGER AVAILABLE",
    "date": "26/11/2026",
    "open": false
+  },
+  {
+   "format": "CENT@HOME",
+   "university": "Università degli studi di Teramo",
+   "region": "ABRUZZO",
+   "city": "TERAMO",
+   "deadline": "20/11/2026",
+   "seats": "46",
+   "state": "AVAILABLE SEATS",
+   "date": "26/11/2026",
+   "open": true
   },
   {
    "format": "CENT@HOME",
