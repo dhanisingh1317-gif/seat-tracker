@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-10T11:51:43.859978+00:00",
+ "changed": "2026-11-10T18:58:08.019392+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -40,10 +40,10 @@
    "region": "ABRUZZO",
    "city": "TERAMO",
    "deadline": "20/11/2026",
-   "seats": "46",
-   "state": "AVAILABLE SEATS",
+   "seats": "---",
+   "state": "NOT LONGER AVAILABLE",
    "date": "26/11/2026",
-   "open": true
+   "open": false
   },
   {
    "format": "CENT@HOME",
