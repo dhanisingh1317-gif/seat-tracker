@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-12T09:06:45.948095+00:00",
+ "changed": "2026-11-12T17:33:06.127329+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -30,7 +30,7 @@
    "city": "PADOVA",
    "deadline": "20/11/2026",
    "seats": "---",
-   "state": "NOT BOOKABLE",
+   "state": "NOT LONGER AVAILABLE",
    "date": "26/11/2026",
    "open": false
   },
@@ -54,6 +54,17 @@
    "seats": "---",
    "state": "NOT LONGER AVAILABLE",
    "date": "26/11/2026",
+   "open": false
+  },
+  {
+   "format": "CENT@HOME",
+   "university": "Sapienza Università di Roma",
+   "region": "LAZIO",
+   "city": "ROMA",
+   "deadline": "11/12/2026",
+   "seats": "---",
+   "state": "NOT LONGER AVAILABLE",
+   "date": "17/12/2026",
    "open": false
   }
  ]
