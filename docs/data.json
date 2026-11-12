@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-10T18:58:08.019392+00:00",
+ "changed": "2026-11-12T09:06:45.948095+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -30,7 +30,7 @@
    "city": "PADOVA",
    "deadline": "20/11/2026",
    "seats": "---",
-   "state": "NOT LONGER AVAILABLE",
+   "state": "NOT BOOKABLE",
    "date": "26/11/2026",
    "open": false
   },
