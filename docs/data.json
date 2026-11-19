@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-12T17:33:06.127329+00:00",
+ "changed": "2026-11-19T10:16:00.539377+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -19,7 +19,7 @@
    "city": "MILANO",
    "deadline": "20/11/2026",
    "seats": "---",
-   "state": "NOT LONGER AVAILABLE",
+   "state": "NOT BOOKABLE",
    "date": "26/11/2026",
    "open": false
   },
@@ -61,6 +61,17 @@
    "university": "Sapienza Università di Roma",
    "region": "LAZIO",
    "city": "ROMA",
+   "deadline": "11/12/2026",
+   "seats": "---",
+   "state": "NOT LONGER AVAILABLE",
+   "date": "17/12/2026",
+   "open": false
+  },
+  {
+   "format": "CENT@HOME",
+   "university": "Politecnico di Milano",
+   "region": "LOMBARDIA",
+   "city": "MILANO",
    "deadline": "11/12/2026",
    "seats": "---",
    "state": "NOT LONGER AVAILABLE",
