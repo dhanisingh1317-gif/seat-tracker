@@ -1,5 +1,5 @@
 {
- "changed": "2026-11-19T19:02:46.816433+00:00",
+ "changed": "2026-11-20T17:14:56.123579+00:00",
  "rows": [
   {
    "format": "CENT@HOME",
@@ -7,8 +7,8 @@
    "region": "LAZIO",
    "city": "ROMA",
    "deadline": "20/11/2026",
-   "seats": "---",
-   "state": "NOT LONGER AVAILABLE",
+   "seats": "0",
+   "state": "BOOKINGS CLOSED",
    "date": "26/11/2026",
    "open": false
   },
@@ -18,8 +18,8 @@
    "region": "LOMBARDIA",
    "city": "MILANO",
    "deadline": "20/11/2026",
-   "seats": "---",
-   "state": "NOT LONGER AVAILABLE",
+   "seats": "0",
+   "state": "BOOKINGS CLOSED",
    "date": "26/11/2026",
    "open": false
   },
@@ -29,8 +29,8 @@
    "region": "VENETO",
    "city": "PADOVA",
    "deadline": "20/11/2026",
-   "seats": "---",
-   "state": "NOT LONGER AVAILABLE",
+   "seats": "0",
+   "state": "BOOKINGS CLOSED",
    "date": "26/11/2026",
    "open": false
   },
@@ -40,8 +40,8 @@
    "region": "ABRUZZO",
    "city": "TERAMO",
    "deadline": "20/11/2026",
-   "seats": "---",
-   "state": "NOT LONGER AVAILABLE",
+   "seats": "0",
+   "state": "BOOKINGS CLOSED",
    "date": "26/11/2026",
    "open": false
   },
@@ -51,8 +51,8 @@
    "region": "VENETO",
    "city": "VENEZIA",
    "deadline": "20/11/2026",
-   "seats": "---",
-   "state": "NOT LONGER AVAILABLE",
+   "seats": "0",
+   "state": "BOOKINGS CLOSED",
    "date": "26/11/2026",
    "open": false
   },
